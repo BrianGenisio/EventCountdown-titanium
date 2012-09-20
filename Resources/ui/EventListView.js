@@ -5,7 +5,13 @@ var EventListView = function() {
 	    title:'Events',
 	    backgroundColor:'#fff'
 	});
-		
+	
+	var addButton = Titanium.UI.createButton({
+		systemButton: Titanium.UI.iPhone.SystemButton.ADD
+	});
+	
+	self.rightNavButton = addButton;
+	
 	var data = Events.findAll();
 		
 	var listView = Titanium.UI.createTableView({
