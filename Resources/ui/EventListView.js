@@ -1,18 +1,12 @@
 var EventListView = function() {
+	var Events = require('model/Events');
+	
 	var self = Titanium.UI.createWindow({  
 	    title:'Events',
 	    backgroundColor:'#fff'
 	});
 		
-	var data = [
-		{
-			title: "Birthday",
-			hasChild: true
-		}, 
-		{
-			title: "Party",
-			hasChild: true
-		}];
+	var data = Events.findAll();
 		
 	var listView = Titanium.UI.createTableView({
 		data: data
