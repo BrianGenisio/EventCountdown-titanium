@@ -4,7 +4,6 @@ var Main = function() {
 	var EventListView = require("ui/EventListView");
 	
 	
-	Titanium.UI.setBackgroundColor('#000');
 	var self = new NavigationController();
 	var eventList = new EventListView();
 	
