@@ -1,6 +1,7 @@
 var EventListView = function() {
 	var Events = require('model/Events');
 	var createAddButton = require("ui/EventListView.AddButton");
+	var _ = require("underscore");
 	
 	var self = Titanium.UI.createWindow({  
 	    title:'Events',
@@ -12,6 +13,15 @@ var EventListView = function() {
 	});
 	
 	var data = Events.findAll();
+		
+	var uiProperties = {
+		hasChild: true,
+		color: "black"
+	};
+		
+	_(data).each(function(item) {
+		_.extend(item, uiProperties);
+	});
 		
 	var listView = Titanium.UI.createTableView({
 		data: data
