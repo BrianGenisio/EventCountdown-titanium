@@ -1,6 +1,6 @@
 var EventListView = function() {
 	var Events = require('model/Events');
-	var createAddButton = require(Titanium.Platform.osname + "/EventListView.AddButton");
+	var createAddButton = require("EventListView.AddButton");
 	
 	var self = Titanium.UI.createWindow({  
 	    title:'Events',
