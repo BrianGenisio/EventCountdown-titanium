@@ -50,3 +50,4 @@ exports.remove = function(item) {
 	dataChanged();
 }
 
+if(!exports.findAll().length) exports.add({title: "Brian's Birthday", type: "Birthday", date: new Date()});

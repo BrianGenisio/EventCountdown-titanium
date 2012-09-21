@@ -1,16 +1,18 @@
 Logfile initialized
 [INFO] logfile = /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build.log
-[DEBUG] /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/builder.py simulator EventCountdown /Applications/android-sdk-macosx /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown com.srtsolutions.eventcountdown 6 HVGA /127.0.0.1:49929
+[DEBUG] /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/builder.py simulator EventCountdown /Applications/android-sdk-macosx /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown com.srtsolutions.eventcountdown 6 HVGA 
 [INFO] Building EventCountdown for Android ... one moment
 [INFO] Titanium SDK version: 2.1.0 (06/28/12 12:16 6e3cab6)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.015213 seconds on emulator to get ready
+[DEBUG] waited 0.015129 seconds on emulator to get ready
 [DEBUG] com.srtsolutions.eventcountdown installed? True
 [INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
+[TRACE] COPYING MODIFIED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/model/Events.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/model/Events.js
+[TRACE] COPYING MODIFIED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/ui/EventListView.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/ui/EventListView.js
 [INFO] Tiapp.xml unchanged, skipping class generation
 [DEBUG] Processing Android resource drawables
 [DEBUG] found drawable-long-land-hdpi splash screen at /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-land-hdpi/default.png
@@ -29,4 +31,3 @@ Logfile initialized
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.srtsolutions.eventcountdown/.EventcountdownActivity }
 Warning: Activity not started, its current task has been brought to the front
 
-[INFO] Forwarding host port 49929 to device for debugging.

@@ -6,11 +6,19 @@ var EventListView = function() {
 	    backgroundColor:'#fff'
 	});
 	
-	var addButton = Titanium.UI.createButton({
-		systemButton: Titanium.UI.iPhone.SystemButton.ADD
-	});
-	
-	self.rightNavButton = addButton;
+	if (Ti.Platform.osname !== 'android') {
+    	var addButton = Titanium.UI.createButton({
+			systemButton: Titanium.UI.iPhone.SystemButton.ADD
+		});
+		
+		self.rightNavButton = addButton;
+	} else {
+    	var activity = self.activity;
+    	activity.onCreateOptionsMenu = function(e){
+	        var menu = e.menu;
+	        var menuItem = menu.add({ title: "Add" });
+	    };
+	}
 	
 	var data = Events.findAll();
 		
