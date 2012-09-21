@@ -5,6 +5,7 @@ var AddEventView = function(controller) {
 	});
 	
 	
+	
 	return self;
 };
 
