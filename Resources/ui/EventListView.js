@@ -1,24 +1,15 @@
 var EventListView = function() {
 	var Events = require('model/Events');
+	var createAddButton = require(Titanium.Platform.osname + "/EventListView.AddButton");
 	
 	var self = Titanium.UI.createWindow({  
 	    title:'Events',
 	    backgroundColor:'#fff'
 	});
 	
-	if (Ti.Platform.osname !== 'android') {
-    	var addButton = Titanium.UI.createButton({
-			systemButton: Titanium.UI.iPhone.SystemButton.ADD
-		});
-		
-		self.rightNavButton = addButton;
-	} else {
-    	var activity = self.activity;
-    	activity.onCreateOptionsMenu = function(e){
-	        var menu = e.menu;
-	        var menuItem = menu.add({ title: "Add" });
-	    };
-	}
+	createAddButton(self, function(e) {
+		Titanium.API.log("ADD IT");
+	});
 	
 	var data = Events.findAll();
 		
