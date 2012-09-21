@@ -1,0 +1,25 @@
+var NavigationController = function() {
+	var self = this;
+	
+	var createNavGroup = function(windowToOpen) {
+		self.navGroup = Ti.UI.iPhone.createNavigationGroup({
+			window : windowToOpen
+		});
+		var containerWindow = Ti.UI.createWindow();
+		containerWindow.add(self.navGroup);
+		containerWindow.open();
+	};
+	
+	self.open = function(windowToOpen) {
+		if(!self.navGroup) {
+			createNavGroup(windowToOpen);
+		}
+		else {
+			self.navGroup.open(windowToOpen);
+		}
+	};
+	
+	return self;
+};
+
+module.exports = NavigationController;

@@ -6,14 +6,12 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.014955 seconds on emulator to get ready
+[DEBUG] waited 0.015026 seconds on emulator to get ready
 [DEBUG] com.srtsolutions.eventcountdown installed? True
 [INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/ui/AddEventView.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/ui/AddEventView.js
-[TRACE] COPYING MODIFIED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/ui/Main.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/ui/Main.js
-[TRACE] COPYING MODIFIED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/ui/NavigationController.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/ui/NavigationController.js
+[TRACE] COPYING MODIFIED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/ui/NavigationController.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/ui/NavigationController.js
 [INFO] Tiapp.xml unchanged, skipping class generation
 [DEBUG] Processing Android resource drawables
 [DEBUG] found drawable-long-land-hdpi splash screen at /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-land-hdpi/default.png
