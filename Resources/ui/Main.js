@@ -5,7 +5,7 @@ var Main = function() {
 	
 	
 	var self = new NavigationController();
-	var eventList = new EventListView();
+	var eventList = new EventListView(self);
 	
     self.open(eventList);
     

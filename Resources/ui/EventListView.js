@@ -1,5 +1,6 @@
-var EventListView = function() {
+var EventListView = function(controller) {
 	var Events = require('model/Events');
+	var AddEventView = require("ui/AddEventView");
 	var createAddButton = require("ui/EventListView.AddButton");
 	var _ = require("underscore");
 	
@@ -9,7 +10,7 @@ var EventListView = function() {
 	});
 	
 	createAddButton(self, function(e) {
-		Titanium.API.log("ADD IT");
+		controller.open(new AddEventView(controller));
 	});
 	
 	var data = Events.findAll();
