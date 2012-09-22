@@ -12,23 +12,29 @@ var EventListView = function(controller) {
 	createAddButton(self, function(e) {
 		controller.open(new AddEventView(controller));
 	});
+			
+	var listView = Titanium.UI.createTableView();
 	
-	var data = Events.findAll();
+	var updateData = function() {
+		var data = Events.findAll();
 		
-	var uiProperties = {
-		hasChild: true,
-		color: "black"
+		var uiProperties = {
+			hasChild: true,
+			color: "black"
+		};
+			
+		_(data).each(function(item) {
+			_.extend(item, uiProperties);
+		});
+		
+		listView.setData(data);
 	};
-		
-	_(data).each(function(item) {
-		_.extend(item, uiProperties);
-	});
-		
-	var listView = Titanium.UI.createTableView({
-		data: data
-	});
+	
+	updateData();
 	
 	self.add(listView);
+	
+	Ti.App.addEventListener('dataChanged:Events', updateData);
 	
 	return self;
 };
