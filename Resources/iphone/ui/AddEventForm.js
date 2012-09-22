@@ -1,5 +1,6 @@
 var AddEventForm = function() {
 	var Styles = require("ui/Styles");
+	var TextFieldPicker = require("ui/TextFieldPicker");	
 	
 	var self = Titanium.UI.createTableView(Styles.addEventTable);
 	var section = Titanium.UI.createTableViewSection({
@@ -27,17 +28,9 @@ var AddEventForm = function() {
 	
 	addRow("Title", self.titleInput);
 	
-	self.typeInput = Titanium.UI.createPicker(Styles.extend("addEventPickerInput", {
-		
-	}));
-	self.typeInput.add([
-		Titanium.UI.createPickerRow({title: 'Birthday'}),
-		Titanium.UI.createPickerRow({title: 'Holiday'}),
-		Titanium.UI.createPickerRow({title: 'Party'}),
-	]);
+	var pickerText = new TextFieldPicker(self, ['Birthday', 'Holiday', 'Party'], 'Birthday');
 	
-	addRow("Type", self.typeInput);
-	
+	addRow("Type", pickerText);
 	
 	self.setData([section]);
 	
