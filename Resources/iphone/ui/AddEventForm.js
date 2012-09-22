@@ -2,7 +2,8 @@ var AddEventForm = function() {
 	var Styles = require("ui/Styles");
 	var TextFieldPicker = require("ui/TextFieldPicker");	
 	
-	var self = Titanium.UI.createTableView(Styles.addEventTable);
+	var self = Titanium.UI.createView();
+	var table = Titanium.UI.createTableView(Styles.addEventTable);
 	var section = Titanium.UI.createTableViewSection({
 		headerTitle: "Create an event"
 	});
@@ -22,17 +23,25 @@ var AddEventForm = function() {
 		section.add(row);
 	};
 	
-	self.titleInput = Titanium.UI.createTextField(Styles.extend("addEventTextInput", {
+	table.titleInput = Titanium.UI.createTextField(Styles.extend("addEventTextInput", {
 		returnKeyType:Titanium.UI.RETURNKEY_NEXT
 	}));
 	
-	addRow("Title", self.titleInput);
+	addRow("Title", table.titleInput);
 	
-	var pickerText = new TextFieldPicker(self, ['Birthday', 'Holiday', 'Party'], 'Birthday');
+	var pickerText = new TextFieldPicker(table, ['Birthday', 'Holiday', 'Party'], 'Birthday');
 	
 	addRow("Type", pickerText);
 	
-	self.setData([section]);
+	table.setData([section]);
+	
+	self.add(table);
+	
+	var datePicker = Titanium.UI.createPicker(Styles.extend("addEventDateInput", {
+		type: Ti.UI.PICKER_TYPE_DATE
+	}));
+	
+	self.add(datePicker);
 	
 	return self;
 };

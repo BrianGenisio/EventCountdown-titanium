@@ -11,6 +11,7 @@ module.exports = {
 	
 	addEventTable: {
 		style: Titanium.UI.iPhone.TableViewStyle.GROUPED,
+		top: 20,
 	},
 	
 	addEventTextLabel: {
@@ -23,6 +24,10 @@ module.exports = {
 		right: 5, 
 		height: 40,
 		width: 200,
+	},
+	
+	addEventDateInput: {
+		bottom: 0,
 	}
 
 };
