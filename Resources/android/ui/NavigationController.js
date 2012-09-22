@@ -1,3 +1,5 @@
+var _ = require("underscore");
+
 var NavigationController = function() {
 	var self = this;
 	
@@ -11,6 +13,10 @@ var NavigationController = function() {
 		}
 		
 		windowToOpen.open();
+	};
+	
+	self.close = function(windowToClose) {
+		windowToClose.close();
 	};
 	
 	return self;

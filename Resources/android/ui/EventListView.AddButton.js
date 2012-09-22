@@ -4,5 +4,5 @@ module.exports = function(win, addHandler) {
         var menu = e.menu;
         var menuItem = menu.add({ title: "Add" });
         menuItem.addEventListener("click", addHandler);
-    };
+   }; 
 };

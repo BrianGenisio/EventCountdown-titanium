@@ -19,6 +19,12 @@ var NavigationController = function() {
 		}
 	};
 	
+	self.close = function(windowToClose) {
+		if(self.navGroup) {
+			self.navGroup.close(windowToClose);
+		}
+	};
+	
 	return self;
 };
 

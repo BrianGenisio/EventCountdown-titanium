@@ -23,17 +23,17 @@ var AddEventForm = function() {
 		section.add(row);
 	};
 	
-	table.titleInput = Titanium.UI.createTextField(Styles.extend("addEventTextInput", {
+	self.titleInput = Titanium.UI.createTextField(Styles.extend("addEventTextInput", {
 		returnKeyType:Titanium.UI.RETURNKEY_NEXT
 	}));
 	
-	addRow("Title", table.titleInput);
+	addRow("Title", self.titleInput);
 	
-	var datePicker = Titanium.UI.createPicker(Styles.extend("addEventDateInput", {
+	self.dateInput = Titanium.UI.createPicker(Styles.extend("addEventDateInput", {
 		type: Ti.UI.PICKER_TYPE_DATE
 	}));
 	
-	table.add(datePicker);
+	table.add(self.dateInput);
 	
 	self.typeInput = new TextFieldPicker(table, ['Birthday', 'Holiday', 'Party'], 'Birthday');
 	

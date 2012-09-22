@@ -1,3 +1,4 @@
+var _ = require("underscore");
 
 var __db = null;
 function db() {
@@ -45,9 +46,9 @@ exports.add = function(item) {
 }
 
 exports.remove = function(item) {
-	db().execute("DELETE FROM eventswhere id = ?", item.id);
+	db().execute("DELETE FROM events where id = ?", item.id);
 	close();
 	dataChanged();
 }
-
+_(exports.findAll()).each(exports.remove);
 if(!exports.findAll().length) exports.add({title: "Brian's Birthday", type: "Birthday", date: new Date()});
