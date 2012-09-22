@@ -9,18 +9,66 @@ module.exports = {
 		backgroundColor:'#fff'
 	},
 	
-	addEventTable: {
-		backgroundColor: 'white',
-		rowBackgroundColor: 'white',
-		top: 10, bottom: 10,
-		width: 300,
-		borderColor: 'black',
-		borderWidth: 1
+	addEventHeaderLabel: {
+		top: 10,
+		left: 10,
+		color: 'black',
+		font: {
+			fontSize: 20,
+			fontWeight: 'bold'
+		},
 	},
 	
-	addEventTitleText: {
-		height: 40,
-		width: 280
+	addEventTitleLabel: {
+		top: 50,
+		left: 10,
+		color: 'black',
+		font: {
+			fontWeight: 'bold'
+		},
+	},
+	
+	addEventTextInput: {
+		top: 75,
+		left: 10,
+		right: 10
+	},
+	
+	addEventTypeLabel: {
+		top: 125,
+		left: 10,
+		color: 'black',
+		font: {
+			fontWeight: 'bold'
+		},
+	},
+	
+	addEventTypeInput: {
+		top: 150,
+		left: 10,
+		right: 10
+	},
+	
+	addEventDateLabel: {
+		top: 200,
+		left: 10,
+		color: 'black',
+		font: {
+			fontWeight: 'bold'
+		},
+	},
+	
+	addEventDateInput: {
+		top: 225,
+		left: 10,
+		right: 10
+	},
+	
+	addEventSaveButton: {
+		bottom: 10,
+		left: 10,
+		right: 10,
 	}
+
 
 };

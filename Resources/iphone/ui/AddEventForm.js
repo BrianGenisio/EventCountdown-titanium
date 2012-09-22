@@ -29,9 +29,9 @@ var AddEventForm = function() {
 	
 	addRow("Title", table.titleInput);
 	
-	var pickerText = new TextFieldPicker(table, ['Birthday', 'Holiday', 'Party'], 'Birthday');
+	self.typeInput = new TextFieldPicker(table, ['Birthday', 'Holiday', 'Party'], 'Birthday');
 	
-	addRow("Type", pickerText);
+	addRow("Type", self.typeInput);
 	
 	table.setData([section]);
 	

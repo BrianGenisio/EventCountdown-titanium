@@ -20,9 +20,8 @@ module.exports = {
 	
 	addEventTextInput: {
 		left: 100,
-		right: 5, 
+		right: 10, 
 		height: 40,
-		width: 200,
 	},
 	
 	addEventDateInput: {
