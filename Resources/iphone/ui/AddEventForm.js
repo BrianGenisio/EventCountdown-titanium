@@ -1,6 +1,6 @@
 var AddEventForm = function() {
-	var Styles = require("ui/Styles");
-	var TextFieldPicker = require("ui/TextFieldPicker");	
+	var Styles = require("Styles");
+	var TextFieldPicker = require("components/TextFieldPicker");	
 	
 	var self = Titanium.UI.createView();
 	var table = Titanium.UI.createTableView(Styles.addEventTable);

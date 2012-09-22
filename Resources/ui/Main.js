@@ -1,6 +1,6 @@
 
 var Main = function() {
-	var NavigationController = require('ui/NavigationController')
+	var NavigationController = require('components/NavigationController')
 	var EventListView = require("ui/EventListView");
 	
 	

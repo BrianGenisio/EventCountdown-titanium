@@ -1,7 +1,7 @@
 var Events = require("model/Events");
 
 var AddEventView = function(controller) {
-	var Styles = require("ui/Styles");
+	var Styles = require("Styles");
 	var AddEventForm = require("ui/AddEventForm");
 	var createSaveButton = require("ui/AddEventView.SaveButton");
 	

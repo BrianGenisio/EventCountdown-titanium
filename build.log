@@ -6,12 +6,17 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.015252 seconds on emulator to get ready
+[DEBUG] waited 0.015559 seconds on emulator to get ready
 [DEBUG] com.srtsolutions.eventcountdown installed? True
 [INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/ui/EventListView.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/ui/EventListView.js
+[TRACE] COPYING CREATED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/components/NavigationController.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/components/NavigationController.js
+[TRACE] COPYING CREATED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/Styles.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/Styles.js
+[TRACE] COPYING MODIFIED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/ui/AddEventForm.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/ui/AddEventForm.js
+[TRACE] COPYING MODIFIED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/ui/AddEventView.SaveButton.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/ui/AddEventView.SaveButton.js
+[TRACE] COPYING MODIFIED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/ui/AddEventView.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/ui/AddEventView.js
+[TRACE] COPYING MODIFIED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/ui/Main.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/ui/Main.js
 [INFO] Tiapp.xml unchanged, skipping class generation
 [DEBUG] Processing Android resource drawables
 [DEBUG] found drawable-long-land-hdpi splash screen at /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-land-hdpi/default.png

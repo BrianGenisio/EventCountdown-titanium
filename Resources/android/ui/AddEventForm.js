@@ -1,5 +1,5 @@
 var AddEventForm = function(controller) {
-	var Styles = require("ui/Styles");
+	var Styles = require("Styles");
 	
 	var self = Titanium.UI.createView();
 	

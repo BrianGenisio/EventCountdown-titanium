@@ -1,4 +1,4 @@
-var Styles = require("ui/Styles");
+var Styles = require("Styles");
 var _ = require("underscore");
 
 var PickerView = function(options) {
