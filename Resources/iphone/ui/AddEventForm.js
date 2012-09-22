@@ -29,6 +29,12 @@ var AddEventForm = function() {
 	
 	addRow("Title", table.titleInput);
 	
+	var datePicker = Titanium.UI.createPicker(Styles.extend("addEventDateInput", {
+		type: Ti.UI.PICKER_TYPE_DATE
+	}));
+	
+	table.add(datePicker);
+	
 	self.typeInput = new TextFieldPicker(table, ['Birthday', 'Holiday', 'Party'], 'Birthday');
 	
 	addRow("Type", self.typeInput);
@@ -36,12 +42,6 @@ var AddEventForm = function() {
 	table.setData([section]);
 	
 	self.add(table);
-	
-	var datePicker = Titanium.UI.createPicker(Styles.extend("addEventDateInput", {
-		type: Ti.UI.PICKER_TYPE_DATE
-	}));
-	
-	self.add(datePicker);
 	
 	return self;
 };
