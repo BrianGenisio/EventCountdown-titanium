@@ -11,10 +11,11 @@ function getHeader(data) {
     return "The event";
 }
 
-function createLabel(id, text) {
-	return Titanium.UI.createLabel(Styles.extend(id, {
-		text: text
-	}));
+function addLabel(view, id) {
+	var label = Titanium.UI.createLabel(Styles.extend(id, {}));
+	view.add(label);
+	view[id] = label;
+	return label;
 }
 
 var EventDetails = function(controller, eventId) {
@@ -24,11 +25,23 @@ var EventDetails = function(controller, eventId) {
 		title: data.title
 	}));
 
-	self.add(createLabel("eventDetailsHeader", getHeader(data) + " on " + DateFormatting.dateText(data)));
-	self.add(createLabel("eventDetailsDays", DateFormatting.daysAwayText(data)));
-    self.add(createLabel("eventDetailsHours", DateFormatting.hoursAwayText(data)));
-    self.add(createLabel("eventDetailsMinutes", DateFormatting.minutesAwayText(data)));
-    self.add(createLabel("eventDetailsSeconds", DateFormatting.secondsAwayText(data)));
+	addLabel(self, "eventDetailsHeader");
+	addLabel(self, "eventDetailsDays");
+    addLabel(self, "eventDetailsHours");
+    addLabel(self, "eventDetailsMinutes");
+    addLabel(self, "eventDetailsSeconds");
+	
+	function render() {
+		self.eventDetailsHeader.text = getHeader(data) + " on " + DateFormatting.dateText(data);
+		self.eventDetailsDays.text = DateFormatting.daysAwayText(data);
+		self.eventDetailsHours.text = DateFormatting.hoursAwayText(data);
+		self.eventDetailsMinutes.text = DateFormatting.minutesAwayText(data);
+		self.eventDetailsSeconds.text = DateFormatting.secondsAwayText(data);
+		
+		setTimeout(render, 1000);
+	}
+	
+	render();
 	
 	return self;
 };
