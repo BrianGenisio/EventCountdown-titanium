@@ -72,6 +72,10 @@ module.exports = {
 		bottom: 10,
 		left: 10,
 		right: 10,
+	},
+	
+	eventDetailsView: {
+		backgroundColor: '#fff'
 	}
 
 

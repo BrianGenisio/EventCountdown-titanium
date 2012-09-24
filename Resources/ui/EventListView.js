@@ -1,6 +1,7 @@
 var Events = require('model/Events');
 var Styles = require("Styles");
 var AddEventView = require("ui/AddEventView");
+var EventDetails = require("ui/EventDetails");
 var createAddButton = require("ui/EventListView.AddButton");
 var _ = require("underscore");
 
@@ -15,6 +16,9 @@ var EventListView = function(controller) {
 	});
 			
 	var listView = Titanium.UI.createTableView();
+	listView.addEventListener("click", function(e) {
+		controller.open(new EventDetails(controller, e.rowData));
+	});
 	self.add(listView);
 	
 	function updateData() {

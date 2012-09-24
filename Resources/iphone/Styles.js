@@ -30,6 +30,10 @@ module.exports = {
 	
 	addEventDateInput: {
 		bottom: 0,
+	},
+	
+	eventDetailsView: {
+		backgroundColor: '#fff'
 	}
 
 };
