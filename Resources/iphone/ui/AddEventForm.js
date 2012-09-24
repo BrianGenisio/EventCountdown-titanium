@@ -24,7 +24,8 @@ var AddEventForm = function() {
 	};
 	
 	self.titleInput = Titanium.UI.createTextField(Styles.extend("addEventTextInput", {
-		returnKeyType:Titanium.UI.RETURNKEY_NEXT
+		returnKeyType:Titanium.UI.RETURNKEY_DONE,
+		value: ''
 	}));
 	
 	addRow("Title", self.titleInput);
