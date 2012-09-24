@@ -1,5 +1,5 @@
-var NavigationController = require('components/NavigationController')
-var EventListView = require("ui/EventListView");
+var NavigationController = GLOBAL.NavigationController || require('components/NavigationController')
+var EventListView = GLOBAL.EventListView || require("ui/EventListView");
 	
 var Main = function() {
 	var self = new NavigationController();
