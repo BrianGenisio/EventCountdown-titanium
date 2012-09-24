@@ -25,6 +25,10 @@ var EventDetails = function(controller, eventId) {
 		title: data.title
 	}));
 
+	self.add(Titanium.UI.createImageView(Styles.extend("eventDetailsImage", {
+		image: data.type + ".jpeg"		
+	})));
+	
 	addLabel(self, "eventDetailsHeader");
 	addLabel(self, "eventDetailsDays");
     addLabel(self, "eventDetailsHours");
