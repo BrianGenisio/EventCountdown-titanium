@@ -1,6 +1,6 @@
-module.exports = function(win, addHandler) {
-	var Styles = require("Styles");
+var Styles = require("Styles");
 	
+module.exports = function(win, addHandler) {
 	var saveButton = Titanium.UI.createButton(Styles.extend("addEventSaveButton", {
 		title: "Save"
 	}));

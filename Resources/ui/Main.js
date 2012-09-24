@@ -1,14 +1,9 @@
-
+var NavigationController = require('components/NavigationController')
+var EventListView = require("ui/EventListView");
+	
 var Main = function() {
-	var NavigationController = require('components/NavigationController')
-	var EventListView = require("ui/EventListView");
-	
-	
 	var self = new NavigationController();
-	var eventList = new EventListView(self);
-	
-    self.open(eventList);
-    
+	self.open(new EventListView(self));
 	return self;
 };
 

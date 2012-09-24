@@ -1,16 +1,14 @@
 var Events = require("model/Events");
+var Styles = require("Styles");
+var AddEventForm = require("ui/AddEventForm");
+var createSaveButton = require("ui/AddEventView.SaveButton");
 
 var AddEventView = function(controller) {
-	var Styles = require("Styles");
-	var AddEventForm = require("ui/AddEventForm");
-	var createSaveButton = require("ui/AddEventView.SaveButton");
-	
 	var self = Titanium.UI.createWindow(Styles.extend("addEventWindow", {
 		title: "New Event",		
 	}));
 	
 	var form = new AddEventForm();
-	
 	self.add(form);
 	
 	createSaveButton(self, function() {

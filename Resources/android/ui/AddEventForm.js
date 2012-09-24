@@ -1,9 +1,9 @@
-var AddEventForm = function(controller) {
-	var Styles = require("Styles");
+var Styles = require("Styles");
 	
+var AddEventForm = function(controller) {	
 	var self = Titanium.UI.createView();
 	
-	var addLabel = function(name, text) {
+	function addLabel(name, text) {
 		var label = Titanium.UI.createLabel(Styles.extend(name, {
 			text: text
 		}));
@@ -22,8 +22,7 @@ var AddEventForm = function(controller) {
 	
 	addLabel("addEventTypeLabel", "Type");
 	
-	self.typeInput = Titanium.UI.createPicker(Styles.extend("addEventTypeInput", {
-	}));
+	self.typeInput = Titanium.UI.createPicker(Styles.extend("addEventTypeInput", { }));
 	self.typeInput.add([
 		Ti.UI.createPickerRow({title:'Birthday'}),
 		Ti.UI.createPickerRow({title:'Holiday'}),

@@ -1,7 +1,7 @@
 var NavigationController = function() {
 	var self = this;
 	
-	var createNavGroup = function(windowToOpen) {
+	function createNavGroup(windowToOpen) {
 		self.navGroup = Ti.UI.iPhone.createNavigationGroup({
 			window : windowToOpen
 		});

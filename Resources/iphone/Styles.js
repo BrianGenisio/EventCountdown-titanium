@@ -5,6 +5,10 @@ module.exports = {
 		return _.extend(this[id] || {}, data);
 	},
 	
+	eventListView: {
+		backgroundColor:'#fff',
+	},
+	
 	addEventWindow: {
 		backgroundColor:'#fff',
 	},

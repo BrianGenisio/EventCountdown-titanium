@@ -3,7 +3,7 @@ var _ = require("underscore");
 var __db = null;
 function db() {
 	if(!__db) {
-		__db = Ti.Database.open('TiBountyHunter');
+		__db = Ti.Database.open('EventCountdown');
 	}
 	return __db;
 }
@@ -50,5 +50,6 @@ exports.remove = function(item) {
 	close();
 	dataChanged();
 }
+
 _(exports.findAll()).each(exports.remove);
 if(!exports.findAll().length) exports.add({title: "Brian's Birthday", type: "Birthday", date: new Date()});
