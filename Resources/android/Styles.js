@@ -6,17 +6,16 @@ module.exports = {
 	},
 	
 	eventListView: {
-		backgroundColor:'#fff',
+		backgroundColor:'black',
 	},
 	
 	addEventWindow: {
-		backgroundColor:'#fff'
+		backgroundColor:'black'
 	},
 	
 	addEventHeaderLabel: {
 		top: 10,
 		left: 10,
-		color: 'black',
 		font: {
 			fontSize: 20,
 			fontWeight: 'bold'
@@ -26,7 +25,6 @@ module.exports = {
 	addEventTitleLabel: {
 		top: 50,
 		left: 10,
-		color: 'black',
 		font: {
 			fontWeight: 'bold'
 		},
@@ -41,7 +39,6 @@ module.exports = {
 	addEventTypeLabel: {
 		top: 125,
 		left: 10,
-		color: 'black',
 		font: {
 			fontWeight: 'bold'
 		},
@@ -56,7 +53,6 @@ module.exports = {
 	addEventDateLabel: {
 		top: 200,
 		left: 10,
-		color: 'black',
 		font: {
 			fontWeight: 'bold'
 		},
@@ -75,13 +71,13 @@ module.exports = {
 	},
 	
 	eventDetailsView: {
-		backgroundColor: '#fff'
+		backgroundColor: 'black'
 	},
 	
 	eventListItemTitleLabel: {
 		left: 10,
 		top: 10,
-		color: 'black',
+		color: '#eee',
 		font: {
 			fontSize: 20,
 			fontWeight: 'bold'
@@ -91,13 +87,14 @@ module.exports = {
 	eventListItemDetailLabel: {
 		left: 10,
 		top: 35,
-		color: '#aaa'
+	},
+	
+	eventListItem: {
 	},
 	
 	eventDetailsHeader: {
 		top: 10,
 		left: 10,
-		color: 'black',
 		font: {
 			fontSize: 18,
 			fontWeight: 'bold',
@@ -107,7 +104,6 @@ module.exports = {
 	eventDetailsDays: {
 		top: 60,
 		left: 10,
-		color: 'black',
 		font: {
 			fontSize: 22,
 			fontWeight: 'bold',
@@ -117,7 +113,6 @@ module.exports = {
 	eventDetailsHours: {
 		top: 90,
 		left: 10,
-		color: 'black',
 		font: {
 			fontSize: 22,
 			fontWeight: 'bold',
@@ -127,7 +122,6 @@ module.exports = {
 	eventDetailsMinutes: {
 		top: 120,
 		left: 10,
-		color: 'black',
 		font: {
 			fontSize: 22,
 			fontWeight: 'bold',
@@ -137,7 +131,6 @@ module.exports = {
 	eventDetailsSeconds: {
 		top: 150,
 		left: 10,
-		color: 'black',
 		font: {
 			fontSize: 22,
 			fontWeight: 'bold',
@@ -145,8 +138,7 @@ module.exports = {
 	},
 
 	eventDetailsImage: {
-		opacity: 0.2, 
-		backgroundColor: '#fff',
+		opacity: 0.3, 
 		left:0,
 		right:0,
 		top:10,

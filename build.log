@@ -6,12 +6,11 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.015096 seconds on emulator to get ready
+[DEBUG] waited 0.014970 seconds on emulator to get ready
 [DEBUG] com.srtsolutions.eventcountdown installed? True
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[TRACE] COPYING CREATED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/ui/EventDetails.RemoveButton.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/ui/EventDetails.RemoveButton.js
-[TRACE] COPYING MODIFIED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/ui/EventDetails.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/ui/EventDetails.js
+[TRACE] COPYING MODIFIED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/Styles.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/Styles.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-land-hdpi/birthday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-land-hdpi/birthday_989b94ff0c.jpeg
@@ -168,7 +167,7 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.015672 seconds on emulator to get ready
+[DEBUG] waited 0.015567 seconds on emulator to get ready
 [INFO] Installing application on emulator
 [INFO] Launching application ... EventCountdown
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.srtsolutions.eventcountdown/.EventcountdownActivity }

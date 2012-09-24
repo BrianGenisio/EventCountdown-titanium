@@ -7,11 +7,11 @@ var createAddButton = require("ui/EventListView.AddButton");
 var _ = require("underscore");
 
 var EventListItemView = function(item) {
-	var self = Titanium.UI.createTableViewRow({
+	var self = Titanium.UI.createTableViewRow(Styles.extend("eventListItem", {
 		id: item.id,
 		hasChild: true,
 		className: "eventListItem"
-	});
+	}));
 	
 	var titleLabel = Titanium.UI.createLabel(Styles.extend("eventListItemTitleLabel", {
 		text: item.title
