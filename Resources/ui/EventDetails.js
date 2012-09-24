@@ -27,7 +27,8 @@ var EventDetails = function(controller, eventId) {
 	self.add(createLabel("eventDetailsHeader", getHeader(data) + " on " + DateFormatting.dateText(data)));
 	self.add(createLabel("eventDetailsDays", DateFormatting.daysAwayText(data)));
     self.add(createLabel("eventDetailsHours", DateFormatting.hoursAwayText(data)));
-	
+    self.add(createLabel("eventDetailsMinutes", DateFormatting.minutesAwayText(data)));
+    self.add(createLabel("eventDetailsSeconds", DateFormatting.secondsAwayText(data)));
 	
 	return self;
 };

@@ -11,7 +11,7 @@ exports.formatNumber = function(value)
 function formatTimeText(value, pluralUnit, singularUnit) {
 	var unitString = Math.abs(value) > 1 ? pluralUnit : singularUnit;
 	if(value < 0) return exports.formatNumber(Math.abs(value)) + " " + unitString + " ago";
-	return value + " " + unitString + " away";
+	return exports.formatNumber(value) + " " + unitString + " away";
 }
 
 exports.daysAwayText = function(item) {
@@ -20,6 +20,14 @@ exports.daysAwayText = function(item) {
 
 exports.hoursAwayText = function(item) {
 	return formatTimeText(item.hoursAway(), "hours", "hour");
+};
+
+exports.minutesAwayText = function(item) {
+	return formatTimeText(item.minutesAway(), "minutes", "minute");
+};
+
+exports.secondsAwayText = function(item) {
+	return formatTimeText(item.secondsAway(), "seconds", "second");
 };
 
 exports.dateText = function(item) {

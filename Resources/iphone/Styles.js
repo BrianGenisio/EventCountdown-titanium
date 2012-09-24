@@ -62,7 +62,7 @@ module.exports = {
 	},
 	
 	eventDetailsDays: {
-		top: 40,
+		top: 60,
 		left: 10,
 		font: {
 			fontSize: 22,
@@ -71,12 +71,30 @@ module.exports = {
 	},
 	
 	eventDetailsHours: {
-		top: 70,
+		top: 90,
 		left: 10,
 		font: {
 			fontSize: 22,
 			fontWeight: 'bold',
 		},
-	}
+	}, 
+	
+	eventDetailsMinutes: {
+		top: 120,
+		left: 10,
+		font: {
+			fontSize: 22,
+			fontWeight: 'bold',
+		},
+	},
+	
+	eventDetailsSeconds: {
+		top: 150,
+		left: 10,
+		font: {
+			fontSize: 22,
+			fontWeight: 'bold',
+		},
+	},
 
 };
