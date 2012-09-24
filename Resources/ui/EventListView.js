@@ -5,6 +5,26 @@ var EventDetails = require("ui/EventDetails");
 var createAddButton = require("ui/EventListView.AddButton");
 var _ = require("underscore");
 
+var EventListItemView = function(item) {
+	var self = Titanium.UI.createTableViewRow({
+		id: item.id,
+		hasChild: true,
+		className: "eventListItem"
+	});
+	
+	var titleLabel = Titanium.UI.createLabel(Styles.extend("eventListItemTitleLabel", {
+		text: item.title
+	}));
+	
+	var detailLabel = Titanium.UI.createLabel(Styles.extend("eventListItemDetailLabel", {
+		text: item.daysAway()
+	}));
+	
+	self.add(titleLabel);
+	self.add(detailLabel);
+	
+	return self;
+};
 
 var EventListView = function(controller) {
 	var self = Titanium.UI.createWindow(Styles.extend("eventListView", {  
@@ -24,14 +44,11 @@ var EventListView = function(controller) {
 	function updateData() {
 		var data = Events.findAll();
 		
-		_(data).each(function(item) {
-			_.extend(item, {
-				hasChild: true,
-				color: "black"
-			});
+		var rows = _(data).map(function(item) {
+			return new EventListItemView(item);
 		});
 		
-		listView.setData(data);
+		listView.setData(rows);
 	};
 	
 	updateData();

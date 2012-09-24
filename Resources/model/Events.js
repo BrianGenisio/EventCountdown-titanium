@@ -1,9 +1,10 @@
+var Event = require("model/Event");
 var _ = require("underscore");
 
 var __db = null;
 function db() {
 	if(!__db) {
-		__db = Ti.Database.open('EventCountdown');
+		__db = Ti.Database.open('EventCountdownDB');
 	}
 	return __db;
 }
@@ -17,7 +18,8 @@ function dataChanged() {
 	Ti.App.fireEvent('dataChanged:Events');
 }
 
-db().execute('CREATE TABLE IF NOT EXISTS events(id INTEGER PRIMARY KEY, title TEXT, type TEXT, date DATETIME);');
+db().execute('DROP TABLE events');
+db().execute('CREATE TABLE IF NOT EXISTS events(id INTEGER PRIMARY KEY, title TEXT, type TEXT, eventDate TEXT);');
 close();
 
 exports.findAll = function() {
@@ -29,18 +31,20 @@ exports.findAll = function() {
 			id: list.fieldByName('id'),
 			title: list.fieldByName('title'),
 			type: list.fieldByName('type'),
-			date: list.fieldByName('date')
+			date: new Date(parseInt(list.fieldByName('eventDate')))
 		});
 		list.next();
 	}
 	list.close();
 	close();
 	
-	return result;
+	return _(result).map(function(item) {
+		return new Event(item);
+	});
 }
 
 exports.add = function(item) {
-	db().execute('INSERT INTO events(title, type, date) VALUES(?,?,?) ', item.title, item.type, item.date);
+	db().execute('INSERT INTO events(title, type, eventDate) VALUES(?,?,?) ', item.title, item.type, (item.date ? item.date.getTime().toString() : '0'));
 	close()
 	dataChanged();
 }

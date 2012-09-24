@@ -34,6 +34,22 @@ module.exports = {
 	
 	eventDetailsView: {
 		backgroundColor: '#fff'
+	},
+	
+	eventListItemTitleLabel: {
+		left: 10,
+		top: 10,
+		color: 'black',
+		font: {
+			fontSize: 20,
+			fontWeight: 'bold'
+		}
+	},
+	
+	eventListItemDetailLabel: {
+		left: 10,
+		top: 40,
+		color: '#aaa'
 	}
 
 };

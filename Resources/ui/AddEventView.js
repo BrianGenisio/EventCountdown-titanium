@@ -11,6 +11,11 @@ var AddEventView = function(controller) {
 	var form = new AddEventForm();
 	self.add(form);
 	
+	form.dateInput.addEventListener("change", function(e){
+    	e.source.value = e.value;
+    });
+	form.dateInput.value = new Date();
+	
 	createSaveButton(self, function() {
 		Events.add({
 			title: form.titleInput.value,
