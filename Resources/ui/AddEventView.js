@@ -11,6 +11,14 @@ var AddEventView = function(controller) {
 	var form = new AddEventForm();
 	self.add(form);
 	
+	form.typeInput.addEventListener("change", function(e){
+		if(e.value) {
+			e.source.value = e.value;
+	    } else {
+	   		e.source.value = e.selectedValue[0];
+	    }
+    });
+	
 	form.dateInput.addEventListener("change", function(e){
     	e.source.value = e.value;
     });

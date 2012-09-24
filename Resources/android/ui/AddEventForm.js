@@ -27,7 +27,8 @@ var AddEventForm = function(controller) {
 		Ti.UI.createPickerRow({title:'Birthday'}),
 		Ti.UI.createPickerRow({title:'Holiday'}),
 		Ti.UI.createPickerRow({title:'Party'}),
-	])
+	]);
+	self.typeInput.value = 'Birthday';
 	self.add(self.typeInput);
 	
 	addLabel("addEventDateLabel", "Date");
