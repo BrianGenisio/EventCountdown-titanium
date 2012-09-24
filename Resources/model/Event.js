@@ -1,9 +1,10 @@
 var Event = function(data) {
 	var self = data;
 	
+	self.today = data.today ? data.today : new Date();
+	
 	self.msAway = function() {
-        var today = new Date();
-        return self.date.getTime() - today.getTime();
+        return self.date.getTime() - self.today.getTime();
     };
     
     self.calculateUnits = function(msInUnit) {
