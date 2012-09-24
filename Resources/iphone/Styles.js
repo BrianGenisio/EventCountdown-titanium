@@ -48,8 +48,35 @@ module.exports = {
 	
 	eventListItemDetailLabel: {
 		left: 10,
-		top: 40,
+		top: 35,
 		color: '#aaa'
+	},
+	
+	eventDetailsHeader: {
+		top: 10,
+		left: 10,
+		font: {
+			fontSize: 18,
+			fontWeight: 'bold',
+		},
+	},
+	
+	eventDetailsDays: {
+		top: 40,
+		left: 10,
+		font: {
+			fontSize: 22,
+			fontWeight: 'bold',
+		},
+	},
+	
+	eventDetailsHours: {
+		top: 70,
+		left: 10,
+		font: {
+			fontSize: 22,
+			fontWeight: 'bold',
+		},
 	}
 
 };

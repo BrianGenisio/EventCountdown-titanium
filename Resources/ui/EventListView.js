@@ -18,7 +18,7 @@ var EventListItemView = function(item) {
 	}));
 	
 	var detailLabel = Titanium.UI.createLabel(Styles.extend("eventListItemDetailLabel", {
-		text: DateFormatting.daysAwayText(item)
+		text: item.daysAway() ? DateFormatting.daysAwayText(item) : 'today'
 	}));
 	
 	self.add(titleLabel);
@@ -38,7 +38,7 @@ var EventListView = function(controller) {
 			
 	var listView = Titanium.UI.createTableView();
 	listView.addEventListener("click", function(e) {
-		controller.open(new EventDetails(controller, e.rowData));
+		controller.open(new EventDetails(controller, e.rowData.id));
 	});
 	self.add(listView);
 	

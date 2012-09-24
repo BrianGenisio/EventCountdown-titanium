@@ -1,23 +1,13 @@
 var Event = function(data) {
 	var self = data;
 	
-	self.formatNumber = function(value)
-    {
-        value += '';
-        var matcher = /(\d+)(\d{3})/;
-        while (matcher.test(value)) {
-            value = value.replace(matcher, '$1' + ',' + '$2');
-        }
-        return value;
-    };
-    
-    self.msAway = function() {
+	self.msAway = function() {
         var today = new Date();
         return self.date.getTime() - today.getTime();
     };
     
     self.calculateUnits = function(msInUnit) {
-        return self.formatNumber(Math.ceil(this.msAway() / msInUnit));
+        return Math.ceil(this.msAway() / msInUnit);
     };
     
     self.daysAway = function() {

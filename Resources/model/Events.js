@@ -18,29 +18,30 @@ function dataChanged() {
 	Ti.App.fireEvent('dataChanged:Events');
 }
 
-db().execute('DROP TABLE events');
 db().execute('CREATE TABLE IF NOT EXISTS events(id INTEGER PRIMARY KEY, title TEXT, type TEXT, eventDate TEXT);');
 close();
+
+function getEvent(list) {
+	return new Event({
+			id: list.fieldByName('id'),
+			title: list.fieldByName('title'),
+			type: list.fieldByName('type'),
+			date: new Date(parseInt(list.fieldByName('eventDate')))
+	});
+}
 
 exports.findAll = function() {
 	var result = [];
 	var list = db().execute('SELECT * FROM events');
 	
 	while(list.isValidRow()) {
-		result.push({
-			id: list.fieldByName('id'),
-			title: list.fieldByName('title'),
-			type: list.fieldByName('type'),
-			date: new Date(parseInt(list.fieldByName('eventDate')))
-		});
+		result.push(getEvent(list));
 		list.next();
 	}
 	list.close();
 	close();
 	
-	return _(result).map(function(item) {
-		return new Event(item);
-	});
+	return result;
 }
 
 exports.add = function(item) {
@@ -55,5 +56,9 @@ exports.remove = function(item) {
 	dataChanged();
 }
 
-_(exports.findAll()).each(exports.remove);
-if(!exports.findAll().length) exports.add({title: "Brian's Birthday", type: "Birthday", date: new Date()});
+exports.get = function(id) {
+	var list = db().execute('SELECT * FROM events WHERE id = ? LIMIT 1', id);
+	var result = getEvent(list);
+	close();
+	return result;
+}
