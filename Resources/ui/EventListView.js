@@ -2,6 +2,7 @@ var Events = require('model/Events');
 var Styles = require("Styles");
 var AddEventView = require("ui/AddEventView");
 var EventDetails = require("ui/EventDetails");
+var DateFormatting = require("ui/DateFormatting");
 var createAddButton = require("ui/EventListView.AddButton");
 var _ = require("underscore");
 
@@ -16,17 +17,8 @@ var EventListItemView = function(item) {
 		text: item.title
 	}));
 	
-	function daysAwayText(item) {
-		var daysAway = item.daysAway();
-		var daysString = Math.abs(daysAway) > 1 ? 'days' : 'day'; 
-		
-		if(daysAway < 0) return Math.abs(daysAway) + " " + daysString + " ago";
-	    if(daysAway == 0) return "today";
-	    return daysAway + " " + daysString + " away";
-	}
-	
 	var detailLabel = Titanium.UI.createLabel(Styles.extend("eventListItemDetailLabel", {
-		text: daysAwayText(item)
+		text: DateFormatting.daysAwayText(item)
 	}));
 	
 	self.add(titleLabel);
