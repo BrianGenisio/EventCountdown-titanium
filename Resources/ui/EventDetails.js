@@ -1,6 +1,7 @@
 var Styles = require("Styles");
 var Events = require("model/Events");
 var DateFormatting = require("ui/DateFormatting");
+var createRemoveButton = require("ui/EventDetails.RemoveButton");
 
 function getHeader(data) {
   	switch(data.type.toLowerCase()) {
@@ -46,6 +47,11 @@ var EventDetails = function(controller, eventId) {
 	}
 	
 	render();
+	
+	createRemoveButton(self, function() {
+		Events.remove(data);
+		controller.close(self);
+	});
 	
 	return self;
 };
