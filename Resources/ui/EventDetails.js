@@ -26,7 +26,7 @@ var EventDetails = function(controller, eventId) {
 	}));
 
 	self.add(Titanium.UI.createImageView(Styles.extend("eventDetailsImage", {
-		image: data.type + ".jpeg"		
+		image: "/images/" + data.type.toLowerCase() + ".jpeg"		
 	})));
 	
 	addLabel(self, "eventDetailsHeader");

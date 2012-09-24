@@ -6,29 +6,169 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.015519 seconds on emulator to get ready
+[DEBUG] waited 0.014783 seconds on emulator to get ready
 [DEBUG] com.srtsolutions.eventcountdown installed? True
-[INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
 [TRACE] COPYING MODIFIED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/Styles.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/Styles.js
-[TRACE] COPYING CREATED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/ui/EventDetails.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/ui/EventDetails.js
-[TRACE] COPYING MODIFIED FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/ui/EventListView.js => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/ui/EventListView.js
-[INFO] Tiapp.xml unchanged, skipping class generation
+[TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-land-hdpi/birthday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-land-hdpi/birthday_989b94ff0c.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-land-hdpi/holiday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-land-hdpi/holiday_7b4b8a529d.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-land-hdpi/party.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-land-hdpi/party_b7538eff28.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-land-ldpi/birthday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-land-ldpi/birthday_989b94ff0c.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-land-ldpi/holiday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-land-ldpi/holiday_7b4b8a529d.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-land-ldpi/party.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-land-ldpi/party_b7538eff28.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-port-hdpi/birthday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-port-hdpi/birthday_989b94ff0c.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-port-hdpi/holiday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-port-hdpi/holiday_7b4b8a529d.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-port-hdpi/party.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-port-hdpi/party_b7538eff28.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-port-ldpi/birthday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-port-ldpi/birthday_989b94ff0c.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-port-ldpi/holiday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-port-ldpi/holiday_7b4b8a529d.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-port-ldpi/party.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-port-ldpi/party_b7538eff28.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-land-hdpi/birthday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-land-hdpi/birthday_989b94ff0c.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-land-hdpi/holiday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-land-hdpi/holiday_7b4b8a529d.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-land-hdpi/party.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-land-hdpi/party_b7538eff28.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-land-ldpi/birthday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-land-ldpi/birthday_989b94ff0c.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-land-ldpi/holiday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-land-ldpi/holiday_7b4b8a529d.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-land-ldpi/party.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-land-ldpi/party_b7538eff28.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-land-mdpi/birthday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-land-mdpi/birthday_989b94ff0c.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-land-mdpi/holiday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-land-mdpi/holiday_7b4b8a529d.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-land-mdpi/party.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-land-mdpi/party_b7538eff28.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-port-hdpi/birthday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-port-hdpi/birthday_989b94ff0c.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-port-hdpi/holiday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-port-hdpi/holiday_7b4b8a529d.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-port-hdpi/party.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-port-hdpi/party_b7538eff28.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-port-ldpi/birthday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-port-ldpi/birthday_989b94ff0c.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-port-ldpi/holiday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-port-ldpi/holiday_7b4b8a529d.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-port-ldpi/party.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-port-ldpi/party_b7538eff28.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-port-mdpi/birthday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-port-mdpi/birthday_989b94ff0c.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-port-mdpi/holiday.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-port-mdpi/holiday_7b4b8a529d.jpeg
+[TRACE] COPYING FILE: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-port-mdpi/party.jpeg => /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-port-mdpi/party_b7538eff28.jpeg
+[DEBUG] copying app icon: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/appicon.png
+[DEBUG] generating theme.xml
 [DEBUG] found drawable-long-land-hdpi splash screen at /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-land-hdpi/default.png
+[DEBUG] copying /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-land-hdpi/default.png splash screen to /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-land-hdpi/background.png
 [DEBUG] found drawable-long-land-ldpi splash screen at /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-land-ldpi/default.png
+[DEBUG] copying /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-land-ldpi/default.png splash screen to /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-land-ldpi/background.png
 [DEBUG] found drawable-long-port-hdpi splash screen at /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-port-hdpi/default.png
+[DEBUG] copying /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-port-hdpi/default.png splash screen to /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-port-hdpi/background.png
 [DEBUG] found drawable-long-port-ldpi splash screen at /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-port-ldpi/default.png
+[DEBUG] copying /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-long-port-ldpi/default.png splash screen to /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-long-port-ldpi/background.png
 [DEBUG] found drawable-notlong-land-hdpi splash screen at /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-land-hdpi/default.png
+[DEBUG] copying /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-land-hdpi/default.png splash screen to /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-land-hdpi/background.png
 [DEBUG] found drawable-notlong-land-ldpi splash screen at /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-land-ldpi/default.png
+[DEBUG] copying /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-land-ldpi/default.png splash screen to /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-land-ldpi/background.png
 [DEBUG] found drawable-notlong-land-mdpi splash screen at /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-land-mdpi/default.png
+[DEBUG] copying /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-land-mdpi/default.png splash screen to /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-land-mdpi/background.png
 [DEBUG] found drawable-notlong-port-hdpi splash screen at /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-port-hdpi/default.png
+[DEBUG] copying /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-port-hdpi/default.png splash screen to /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-port-hdpi/background.png
 [DEBUG] found drawable-notlong-port-ldpi splash screen at /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-port-ldpi/default.png
+[DEBUG] copying /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-port-ldpi/default.png splash screen to /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-port-ldpi/background.png
 [DEBUG] found drawable-notlong-port-mdpi splash screen at /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-port-mdpi/default.png
+[DEBUG] copying /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/Resources/android/images/res-notlong-port-mdpi/default.png splash screen to /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/res/drawable-notlong-port-mdpi/background.png
+[DEBUG] found splash screen at /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/assets/Resources/default.png
+[TRACE] Writing out AndroidManifest.xml
+[DEBUG] adding /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/gen/com/srtsolutions/eventcountdown/EventcountdownActivity.java to javac build list
+[DEBUG] adding /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/gen/com/srtsolutions/eventcountdown/EventcountdownAppInfo.java to javac build list
+[DEBUG] adding /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/gen/com/srtsolutions/eventcountdown/EventcountdownApplication.java to javac build list
+[DEBUG] adding /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/gen/com/srtsolutions/eventcountdown/R.java to javac build list
+[DEBUG] Building Java Sources: "/Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/gen/com/srtsolutions/eventcountdown/EventcountdownActivity.java" "/Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/gen/com/srtsolutions/eventcountdown/EventcountdownAppInfo.java" "/Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/gen/com/srtsolutions/eventcountdown/EventcountdownApplication.java" "/Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/gen/com/srtsolutions/eventcountdown/R.java"
 [INFO] Waiting for SDCard to become available..
-[INFO] Re-launching application ... EventCountdown
+[INFO] Compiling Android Resources... This could take some time
+[DEBUG] Android classes.dex built
+[DEBUG] creating unsigned apk: /Users/Brian/Documents/Titanium_Studio_Workspace/EventCountdown/build/android/bin/app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/components/NavigationController.js
+[DEBUG] from resource zip => assets/Resources/model/Event.js
+[DEBUG] from resource zip => assets/Resources/model/Events.js
+[DEBUG] from resource zip => assets/Resources/ui/AddEventForm.js
+[DEBUG] from resource zip => assets/Resources/ui/AddEventView.SaveButton.js
+[DEBUG] from resource zip => assets/Resources/ui/AddEventView.js
+[DEBUG] from resource zip => assets/Resources/ui/DateFormatting.js
+[DEBUG] from resource zip => assets/Resources/ui/EventDetails.js
+[DEBUG] from resource zip => assets/Resources/ui/EventListView.AddButton.js
+[DEBUG] from resource zip => assets/Resources/ui/EventListView.js
+[DEBUG] from resource zip => assets/Resources/ui/Main.js
+[DEBUG] from resource zip => assets/Resources/KS_nav_ui.png
+[DEBUG] from resource zip => assets/Resources/KS_nav_views.png
+[DEBUG] from resource zip => assets/Resources/Styles.js
+[DEBUG] from resource zip => assets/Resources/app.js
+[DEBUG] from resource zip => assets/Resources/appicon.png
+[DEBUG] from resource zip => assets/Resources/default.png
+[DEBUG] from resource zip => assets/Resources/ti.cloud.js
+[DEBUG] from resource zip => assets/Resources/underscore.js
+[DEBUG] from resource zip => assets/app.json
+[DEBUG] from resource zip => assets/index.json
+[DEBUG] from resource zip => assets/tiapp.xml
+[DEBUG] from resource zip => res/drawable/appicon.png
+[DEBUG] from resource zip => res/drawable/background.png
+[DEBUG] from resource zip => res/layout/titanium_tabgroup.xml
+[DEBUG] from resource zip => AndroidManifest.xml
+[DEBUG] from resource zip => resources.arsc
+[DEBUG] from resource zip => res/drawable-long-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-long-land-hdpi/birthday_989b94ff0c.jpeg
+[DEBUG] from resource zip => res/drawable-long-land-hdpi/holiday_7b4b8a529d.jpeg
+[DEBUG] from resource zip => res/drawable-long-land-hdpi/party_b7538eff28.jpeg
+[DEBUG] from resource zip => res/drawable-long-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-long-land-ldpi/birthday_989b94ff0c.jpeg
+[DEBUG] from resource zip => res/drawable-long-land-ldpi/holiday_7b4b8a529d.jpeg
+[DEBUG] from resource zip => res/drawable-long-land-ldpi/party_b7538eff28.jpeg
+[DEBUG] from resource zip => res/drawable-long-port-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-long-port-hdpi/birthday_989b94ff0c.jpeg
+[DEBUG] from resource zip => res/drawable-long-port-hdpi/holiday_7b4b8a529d.jpeg
+[DEBUG] from resource zip => res/drawable-long-port-hdpi/party_b7538eff28.jpeg
+[DEBUG] from resource zip => res/drawable-long-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-long-port-ldpi/birthday_989b94ff0c.jpeg
+[DEBUG] from resource zip => res/drawable-long-port-ldpi/holiday_7b4b8a529d.jpeg
+[DEBUG] from resource zip => res/drawable-long-port-ldpi/party_b7538eff28.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-hdpi/birthday_989b94ff0c.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-land-hdpi/holiday_7b4b8a529d.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-land-hdpi/party_b7538eff28.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-ldpi/birthday_989b94ff0c.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-land-ldpi/holiday_7b4b8a529d.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-land-ldpi/party_b7538eff28.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/birthday_989b94ff0c.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/holiday_7b4b8a529d.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/party_b7538eff28.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-hdpi/birthday_989b94ff0c.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-port-hdpi/holiday_7b4b8a529d.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-port-hdpi/party_b7538eff28.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-ldpi/birthday_989b94ff0c.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-port-ldpi/holiday_7b4b8a529d.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-port-ldpi/party_b7538eff28.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-mdpi/birthday_989b94ff0c.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-port-mdpi/holiday_7b4b8a529d.jpeg
+[DEBUG] from resource zip => res/drawable-notlong-port-mdpi/party_b7538eff28.jpeg
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/thirdparty.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/thirdparty.jar => org/apache/mime4j-NOTICE.txt
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR /Users/Brian/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] installing native SDK libs
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.015290 seconds on emulator to get ready
+[INFO] Installing application on emulator
 [INFO] Launching application ... EventCountdown
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.srtsolutions.eventcountdown/.EventcountdownActivity }
-Warning: Activity not started, its current task has been brought to the front
 
+[INFO] Deployed EventCountdown ... Application should be running.

@@ -6,6 +6,7 @@
     <property name="acs-oauth-secret-development" type="string">q1tW1vbPnoUCICSgRsqrnOrAjCYgYRJS</property>
     <property name="acs-oauth-key-development" type="string">oyVu8gptIrqtW5Xtd6WJmyspdr5Ga4rG</property>
     <property name="acs-api-key-development" type="string">F4yxTkjtTeN4fwBJSEnZjPM7IY5F2Bbc</property>
+    <property name="ti.android.fastdev" type="bool">false</property>
     <deployment-targets>
         <target device="mobileweb">true</target>
         <target device="iphone">true</target>
